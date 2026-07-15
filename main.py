@@ -3,7 +3,7 @@
 # Created by: Sushanth
 # Version: 1.1
 # =====================================
-from history import save_history, load_history # type: ignore
+from history import save_history, load_history 
 
 def add(num1: float, num2: float) -> float:
     return num1 + num2
@@ -37,8 +37,9 @@ while True:
     print("5. View History")
     print("6. Exit")
     print("7. Clear History")
+    print("================================")
 
-    choice = input("Enter your choice (1/2/3/4/5/6/7): ")
+    choice = input("Enter your choice (1/2/3/4/5/6/7/8/9): ")
 
     if choice == "1":
         try:
@@ -104,5 +105,6 @@ while True:
             print("History Cleared.")
         elif clear_history.lower() == "n":
             print("History Not cleared.")
+    
     else:
         print("Invalid choice. Please enter 1-7.")
