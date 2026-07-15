@@ -29,9 +29,11 @@ while True:
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    print("5. Exit")
+    print("5. View History")
+    print("6. Exit")
+    print("7. Clear History")
 
-    choice = input("Enter your choice (1/2/3/4/5): ")
+    choice = input("Enter your choice (1/2/3/4/5/6/7): ")
 
     if choice == "1":
         try:
@@ -82,10 +84,18 @@ while True:
             history.append(f"{num1} / {num2} = {result}")
 
     elif choice == "5":
+        print("History:")
+        for entry in history:
+            print(entry)
+    elif choice == "6":
         print("Exiting calculator...")
         break
-
+    elif choice == "7":
+        clear_history = input("Are you sure you want to clear the history? (y/n): ")
+        if clear_history.lower() == "y":
+            history.clear()
+            print("History Cleared.")
+        elif clear_history.lower() == "n":
+            print("History Not cleared.")
     else:
-        print("Invalid choice. Please enter 1-5.")
-
-    
+        print("Invalid choice. Please enter 1-7.")
