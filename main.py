@@ -3,7 +3,7 @@
 # Created by: Sushanth
 # Version: 1.1
 # =====================================
-from history import save_history
+from history import save_history, load_history # type: ignore
 
 def add(num1: float, num2: float) -> float:
     return num1 + num2
@@ -21,6 +21,9 @@ def divide(num1: float, num2: float) -> float | str:
         return num1 / num2 
     
 history: list[str] = []
+
+history = load_history() 
+
     
 
 while True:
