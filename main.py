@@ -3,6 +3,8 @@
 # Created by: Sushanth
 # Version: 1.1
 # =====================================
+from history import save_history
+
 def add(num1: float, num2: float) -> float:
     return num1 + num2
 
@@ -45,7 +47,8 @@ while True:
             result = add(num1,num2)
             print(f"Result: {result}")
 
-            history.append(f"{num1} + {num2} = {result}") 
+            history.append(f"{num1} + {num2} = {result}")
+            save_history(history)
 
     elif choice == "2":
         try:
@@ -58,7 +61,7 @@ while True:
             print(f"Result: {result}")
 
             history.append(f"{num1} - {num2} = {result}")
-
+            save_history(history)
     elif choice == "3":
         try:
             num1 = float(input("Enter your first number: "))
@@ -70,6 +73,7 @@ while True:
             print(f"Result: {result}")
 
             history.append(f"{num1} * {num2} = {result}")
+            save_history(history)
 
     elif choice == "4":
         try:
@@ -82,7 +86,7 @@ while True:
             print(f"Result: {result}")
 
             history.append(f"{num1} / {num2} = {result}")
-
+            save_history(history)
     elif choice == "5":
         print("History:")
         for entry in history:
