@@ -1,118 +1,7 @@
-PYTHON CALCULATOR v1.0 - TOPICS REVISION
+
 
 ====================================
-1. VARIABLES
-====================================
-Used to store values.
-Example:
-- num1
-- num2
-- result
-- history
-
-====================================
-2. FUNCTIONS
-====================================
-Functions organize code into reusable blocks.
-
-Functions used:
-- add()
-- subtract()
-- multiply()
-- divide()
-- save_history()
-- load_history()
-
-return:
-Returns a value back to the place where the function was called.
-
-====================================
-3. INPUT / OUTPUT
-====================================
-input()  -> Takes input from the user.
-print()  -> Displays output.
-
-====================================
-4. IF / ELIF / ELSE
-====================================
-Used to make decisions based on the user's menu choice.
-
-====================================
-5. WHILE LOOP
-====================================
-while True:
-Keeps the calculator running until Exit is selected.
-
-====================================
-6. TRY / EXCEPT
-====================================
-Used to catch invalid user input instead of crashing.
-
-Exception used:
-ValueError
-
-====================================
-7. LISTS
-====================================
-history = []
-
-Stores multiple calculations.
-
-Methods learned:
-append() -> Add an item.
-clear()  -> Remove all items.
-
-====================================
-8. FOR LOOP
-====================================
-Used to visit every item in the history list.
-
-Example:
-for entry in history:
-    print(entry)
-
-====================================
-9. FILE HANDLING
-====================================
-
-open("history.txt", "w")
-Write to a file.
-
-open("history.txt", "r")
-Read from a file.
-
-write()
-Writes text into the file.
-
-read()
-Reads all text from the file.
-
-close()
-Closes the file.
-
-split("\\n")
-Converts file text into a Python list.
-
-====================================
-10. IMPORTS
-====================================
-
-from history import save_history, load_history
-
-Imports functions from another Python file.
-
-====================================
-11. TYPE HINTS
-====================================
-
-Examples:
-num1: float
-history: list[str]
-
-Helps explain what type of data a variable or function uses.
-
-====================================
-12. PROJECT FLOW
+ PROJECT FLOW
 ====================================
 
 Start Program
@@ -133,15 +22,25 @@ Save History
 ↓
 Repeat Until Exit
 
+
+
 ====================================
-NEXT TOPIC
+ PROJECT FLOW   GUI
 ====================================
 
-Tkinter GUI
-- Windows
-- Buttons
-- Labels
-- Entry Boxes
-- Events
-- Connecting the GUI to your calculator logic
-""")
+
+1. Import Tkinter
+        ↓
+2. Create the main window
+        ↓
+3. Configure the window
+        ↓
+4. Create widgets
+        ↓
+5. Position widgets
+        ↓
+6. Define functions/events
+        ↓
+7. Connect widgets to functions
+        ↓
+8. Start the main loop

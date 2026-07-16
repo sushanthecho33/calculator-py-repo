@@ -3,7 +3,7 @@
 # Created by: Sushanth
 # Version: 1.1
 # =====================================
-from history import save_history, load_history  
+from history import save_history, load_history  #type: ignore
 
 def add(num1: float, num2: float) -> float:
     return num1 + num2

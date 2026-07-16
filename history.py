@@ -1,9 +1,9 @@
 # history utilities for the calculator project
-def save_history(history):
+def save_history(history): #type: ignore
     file = open("history.txt", "w")
 
-    for calculation in history: 
-        file.write(calculation + "\n")
+    for calculation in history: #type: ignore
+        file.write(calculation + "\n") #type: ignore
 
     file.close()
 def load_history():
